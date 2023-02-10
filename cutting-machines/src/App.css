@@ -1,0 +1,39 @@
+.machines-list ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.machines-list ul li {
+    margin: 8px;
+    flex-basis: 100%;
+}
+
+.machine-card {
+    padding: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.machine-card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.machine-card__title {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 4px;
+    border-bottom: solid 1px rgba(0,0,0,0.2);
+}
+
+.machine-card__subtitle {
+    font-weight: bold;
+}
+
+
+@media (min-width: 768px) {
+    .machines-list ul li {
+        flex-basis: 45%;
+    }
+  }
